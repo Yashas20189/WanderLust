@@ -1,0 +1,174 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container{
+    flex: 1;
+}
+
+.container1{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 3rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.navbar-nav .logo{
+    color: #f30919 !important;
+    font-weight: 1000 !important;
+    font-size: 30px !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+ 
+    
+}
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    transition: 0.3s;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #222222;
+    transform: scale(1.1);
+}
+
+.f-info-links , .f-info-socials , .f-info-brand{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    width: 500px; /* Set a fixed width for the card */
+    height: 600px; /* Set a fixed height for the card */
+    border-radius: 1rem !important;
+    overflow: hidden; /* Ensures content doesn't overflow outside the card */
+    box-shadow: none; /* Optional: Adds subtle shadow for aesthetics */
+    padding: 2rem;
+}
+
+/* Card image */
+.card-img-top {
+    border-radius: 1rem 1rem 0 0 !important; /* Keep the rounded corners at the top */
+    width: 100% !important;
+    height: 200px !important; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the entire area and keeps aspect ratio */
+  
+}
+
+/* Card body */
+.card-body {
+    padding: 0 !important;
+    text-align: center; /* Center the content within the card */
+}
+
+/* Card text */
+.card-text p {
+    font-weight: 400 !important;
+    margin: 10px 0; /* Adds some space between text elements */
+}
+
+/* Links */
+.listing-link {
+    text-decoration: none;
+}
+
+/* Optional: Add padding/margin to create space between cards */
+.listing-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the space between cards */
+}
+
+/* Card-Effect */
+
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn{
+    background-color:  #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+    background-color:  #fe424d !important;
+    border: none !important;
+}
+
+/* Show Image */
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* MAp */
+
+#map {
+    height: 400px;
+    width: 80vh;
+
+}
+
+.all-listings-heading {
+    padding-left: 60px;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.edit-btn, .delete-btn {
+    font-size: 1.25rem;   /* Larger text */
+    padding: 0.75rem 2rem; /* Top/bottom, Left/right */
+    border-radius: 8px;
+}
