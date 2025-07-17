@@ -11,6 +11,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user.js'); // Import the User model
 
+const dbUrl = process.env.ATLAS_DB_URL;
+
 // Importing routes
 const userRouter = require('./routes/user.js');
 const reviewRouter = require('./routes/review.js');
@@ -24,7 +26,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/WanderLust');
+  await mongoose.connect(dbUrl);
 }
 
 // Add them later 
@@ -38,7 +40,7 @@ app.use(express.static("public"));
 
 // Session configuration
 const sessionOptions = {
-  secret: "mysupersecretcode",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   cookie: {
