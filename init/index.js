@@ -3,7 +3,7 @@ const initData = require("./data.js"); // requring all data from data.js(locatio
 const Listing = require("../models/listing.js");
 // requires models(Blueprint) from model folder
 
-
+const dbUrl = process.env.ATLAS_DB_URL;
 main()
 .then(() =>{
     console.log("Connection successful");
@@ -11,7 +11,7 @@ main()
 .catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/WanderLust');
+  await mongoose.connect(dbUrl);
 }
 
 const initDB = async () => {
